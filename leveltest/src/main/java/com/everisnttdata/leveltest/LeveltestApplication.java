@@ -22,7 +22,7 @@ public class LeveltestApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(LeveltestApplication.class, args);
 		
-		//skip y settings tienen la misma funcionalidad. Saltar filas contando una primera como cabecera.
+		//.skip y .settings tienen la misma funcionalidad. Saltar filas contando una primera como cabecera.
 		PoijiOptions options = PoijiOptions.PoijiOptionsBuilder.settings(3)
 				.addListDelimiter(";")
 				.build();

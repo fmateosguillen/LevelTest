@@ -12,8 +12,14 @@ import lombok.Data;
 @ExcelSheet("Plantilla límite por país")
 public class Country {
 	
+	//pone un índice a cada fila de objetos
 	@ExcelRow
 	private int rowIndex;
+	
+	//ExcelCell refiere a una columna que contiene datos 
+	//(puedes emplear un booleano como parámetro adicional para afirmar si esa columna es requerida o no)
+	
+	//ExcelCellName especifica el nombre de la columna desde la que se extraerán los datos.
 	
 	//@ExcelCell(0)
 	@ExcelCellName("Código país")
